@@ -28,6 +28,9 @@ resized_image = image.resize((new_width, new_height))
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
+server = app.server
+app.title = 'Avance de Proyectos'
+
 app.layout = html.Div([
     html.Div([
         html.Div([
